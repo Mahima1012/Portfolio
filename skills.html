@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Skills</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+#skills{
+    padding:80px 10%;
+    text-align:center;
+}
+
+#skills h2{
+    font-size:42px;
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.skill-card{
+    background:#fff;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.skill-card h3{
+    color:#3498db;
+    margin-bottom:15px;
+}
+
+.skill-card ul{
+    list-style:none;
+}
+
+.skill-card li{
+    margin:10px 0;
+    color:#555;
+    font-size:17px;
+}
+
+
+
+.project-box{
+    margin:50px auto 0;
+    max-width:700px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-box h3{
+    color:#3498db;
+    margin-bottom:15px;
+}
+
+.project-box p{
+    color:#555;
+    line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<section id="skills">
+
+    <h2>My Skills</h2>
+    <p class="subtitle">
+        Programming, Web Development, Database Management & Problem Solving
+    </p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Database</h3>
+            <ul>
+                <li>DBMS</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Problem Solving</h3>
+            <ul>
+                <li>Competitive Programming</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="project-box">
+        <h3>Project Experience</h3>
+        <p>
+            Developed responsive web applications using HTML, CSS and JavaScript.
+            Also practiced Competitive Programming in C++ to strengthen problem-solving
+            and algorithmic thinking skills.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>

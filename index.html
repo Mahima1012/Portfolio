@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      display:flex;
+      min-height:100vh;
+      background:#f8f8f8;
+      overflow:hidden;
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+      width:220px;
+      background:#f1f1f1;
+      padding:40px 35px;
+      position:fixed;
+      height:100%;
+      left:0;
+      top:0;
+    }
+
+    
+    .menu{
+      list-style:none;
+    }
+
+    .menu li{
+      margin:22px 0;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#777;
+      font-size:15px;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .menu a:hover,
+    .menu .active{
+      color:#111;
+    }
+
+    /* Main Content */
+
+    .main{
+      margin-left:220px;
+      width:calc(100% - 220px);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+      padding:40px;
+      text-align:center;
+    }
+
+    .content{
+      max-width:700px;
+      z-index:2;
+    }
+
+    
+
+    .small-text{
+      color:#bbb;
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    h1{
+      font-size:55px;
+      color:#111;
+      margin-bottom:25px;
+    }
+
+    .description{
+      color:#8b8b8b;
+      line-height:1.9;
+      font-size:17px;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      color:#999;
+      border-bottom:1px solid #ccc;
+      padding-bottom:4px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      color:#111;
+      border-color:#111;
+    }
+
+    /* Mountain Background */
+
+    .mountain{
+      position:absolute;
+      bottom:-40px;
+      left:50%;
+      transform:translateX(-50%);
+      width:900px;
+      opacity:0.12;
+      z-index:1;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+
+    <ul class="menu">
+      <li><a href="portfolio.html" class="active">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+
+  <div class="main">
+
+    <div class="content">
+
+      <div class="small-text">Hello I'm</div>
+
+      <h1>Mahima Akter Mithila</h1>
+
+      <p class="description">
+        I'am a student at Varendra University. Studying in Computer Science Engineering.
+      </p>
+
+
+    </div>
+
+    <!-- Background Mountain -->
+
+    <img 
+      class="mountain"
+      src="https://pngimg.com/d/mountain_PNG18.png"
+      alt="mountain"
+    >
+
+  </div>
+
+  <script>
+    // Simple menu active effect
+
+    const links = document.querySelectorAll(".menu a");
+
+    links.forEach(link => {
+      link.addEventListener("click", function(){
+
+        links.forEach(item => item.classList.remove("active"));
+
+        this.classList.add("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
